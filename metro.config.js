@@ -5,7 +5,10 @@
  * @format
  */
 
-module.exports = {
+
+const { makeMetroConfig } = require("@rnx-kit/metro-config");
+
+module.exports = makeMetroConfig({
   transformer: {
     getTransformOptions: async () => ({
       transform: {
@@ -14,4 +17,4 @@ module.exports = {
       },
     }),
   },
-};
+});
