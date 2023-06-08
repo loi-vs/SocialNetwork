@@ -16,6 +16,8 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import RNBootSplash from 'react-native-bootsplash';
+import { NavigationContainer } from '@react-navigation/native';
 
 import {
   Colors,
@@ -64,6 +66,7 @@ function App(): JSX.Element {
 
   return (
     <SafeAreaView style={backgroundStyle}>
+      {/* <NavigationContainer onReady={() => RNBootSplash.hide()}/> */}
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
